@@ -8,6 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true); // ✅ loading state
   const authorization = `Bearer ${token}`;
   const isLoggedIn = !!token;
+  const URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
   // ✅ Save token to localStorage and state
   const saveTokenInLocalStr = (token) => {
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async () => {
     setLoading(true); // start loading
     try {
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch(`${URL}/api/auth/user`, {
         method: "GET",
         headers: {
           Authorization: authorization,
