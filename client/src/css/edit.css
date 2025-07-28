@@ -1,0 +1,68 @@
+.admin-edit-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-edit-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.admin-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-edit-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.admin-edit-form input[type="text"],
+.admin-edit-form input[type="email"] {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 6px;
+  transition: border 0.3s;
+}
+
+.admin-edit-form input[type="text"]:focus,
+.admin-edit-form input[type="email"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btn-update {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+  background-color: #1c6690;
+}

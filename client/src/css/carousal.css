@@ -1,0 +1,60 @@
+/* Carousel Container */
+.full-width-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Banner Section */
+.home-banner {
+  text-align: center;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Slide Container */
+.full-width-slide {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Slide Image Styling */
+.full-width-slide img,
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .full-width-slide {
+    height: 30vh;
+  }
+
+  .home-banner {
+    padding: 10px;
+  }
+
+  .slide-image {
+    border-radius: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-width-slide {
+    height: 25vh;
+  }
+
+  .slide-image {
+    border-radius: 4px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --white: #fff;
+  --max-width: 1200px;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Base styles */
+.about-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  align-items: center;
+}
+
+/* Hero content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight:500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--text-light);
+  max-width: 60ch;
+}
+
+/* Hero image */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  width: 100%;
+  height:100%;
+  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.hero-image:hover img {
+  transform: scale(1.02);
+}
+
+/* Button styles */
+.ab-btn1{
+  background-color: rgb(25, 0, 46);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 200px;
+  margin-left: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.ab-btn1:hover {
+  background-color:rgb(11, 0, 29);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+  .about-main{
+     padding: 0%;
+     background-color: #1e40af;
+  }
+  .hero-image {
+    order: -1;
+  }
+  .hero-content {
+    text-align: center;
+    align-items: center;
+
+  }
+  .container{
+    width:auto;
+  }
+  
+  .btn-group {
+    justify-content: center;
+  }
+  .ab-btn1{
+    margin-top: 5px;
+  }
+}

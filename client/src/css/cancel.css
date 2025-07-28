@@ -1,0 +1,28 @@
+.stripe-page {
+  text-align: center;
+  padding: 4rem;
+  font-family: sans-serif;
+}
+
+.stripe-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.stripe-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}

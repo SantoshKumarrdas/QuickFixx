@@ -1,0 +1,153 @@
+.section-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(241, 241, 241);
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 10px;
+  margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.login-auth-container {
+  display: flex;
+  width: 900px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 5px rgba(54, 54, 54, 0.5), -4px -4px 5px  rgba(54, 54, 54, 0.5);
+
+}
+
+/* LEFT PANEL */
+.section-login .auth-left {
+  flex: 1;
+   background-color: #00305f;
+  color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius:32%;
+  border-bottom-left-radius: 32%;
+  text-align: center;
+}
+
+.section-login .auth-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-login .auth-left p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.section-login .btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+ border-radius:12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-login .btn-outline:hover {
+  background-color: white;
+  color: #4b6cb7;
+}
+
+/* RIGHT PANEL (Login Form) */
+.section-login .auth-right {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-login .main-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-login .auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.section-login .input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-login .input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.section-login .input-group input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.section-login .input-group input:focus {
+  border-color: #4b6cb7;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 0.8rem 1.5rem;
+   background-color: #00305f;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius:12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.section-login .btn-primary:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-auth-container {
+   flex-direction: column-reverse;
+   height: auto;
+  
+  }
+  .section-login{
+    background-color:rgb(75, 74, 74);
+    padding: 15px;
+  }
+
+.section-login .auth-left,
+.section-login .auth-right {
+    border-radius: 30%;
+  }
+
+  .section-login .auth-left {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .section-login .auth-right {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}

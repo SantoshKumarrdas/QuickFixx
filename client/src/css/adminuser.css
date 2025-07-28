@@ -1,0 +1,96 @@
+/* Admin Dashboard Container */
+.admin-dashboard h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Scrollable Table */
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+/* Table Head */
+.admin-dashboard thead {
+  background-color: #2f3e46;
+  color: white;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Zebra rows */
+.admin-dashboard tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Edit and Delete links/buttons */
+.admin-dashboard a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admin-dashboard a:hover {
+  text-decoration: underline;
+}
+
+.admin-dashboard button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-dashboard button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .admin-dashboard table,
+  .admin-dashboard thead,
+  .admin-dashboard tbody,
+  .admin-dashboard th,
+  .admin-dashboard td,
+  .admin-dashboard tr {
+    display: block;
+  }
+
+  .admin-dashboard thead {
+    display: none;
+  }
+
+  .admin-dashboard tr {
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+
+  .admin-dashboard td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .admin-dashboard td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+}
