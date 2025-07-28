@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 // ✅ CORS Configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // React frontend
+  origin:  ["http://localhost:5173", "https://quick-fixx.vercel.app"],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
