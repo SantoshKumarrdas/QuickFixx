@@ -545,7 +545,7 @@ background-color: #202b3b;
 }
 
 /* Mobile View (≤768px) */
-@media (max-width: 408px) {
+@media (max-width:768px) {
   .payment-page{
     padding:0%;
   }
