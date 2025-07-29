@@ -195,10 +195,12 @@ export const Carpenter = () => {
                                     <h4>{item.name}</h4>
                                     <p>₹ {item.price}</p>
                                     <h4>{item.rating}</h4>
-                                    <button onClick={() => handleAddToCart(item)}>Add</button>
-                                    <button onClick={() => handleLike(item.id)}>
-                                        {likedItems.includes(item.id) ? "❤️ Liked" : "🤍 Like"}
-                                    </button>
+                                    <div className="button-group">
+                                        <button className="product-card-btn" onClick={() => handleAddToCart(item)}>Add</button>
+                                        <button className="product-card-btn" onClick={() => handleLike(item.id)}>
+                                            {likedItems.includes(item.id) ? "❤️ Liked" : "🤍 Like"}
+                                        </button>
+                                    </div>
                                 </div>
                             ))
                         )}
