@@ -1,7 +1,7 @@
 export const product = [
   {
     id: 1,
-    name: "Ceiling Fan Installation",
+    name: "Ceiling Fan",
     imgdata: "https://images-cdn.ubuy.co.in/633d4f111ee453336a64756b-harbor-breeze-merrimack-ii-52-in-matte.jpg",
     rating: "⭐ ⭐ ⭐ ⭐",
     price: 300,
@@ -17,7 +17,7 @@ export const product = [
   },
   {
     id: 3,
-    name: "Tube Light Installation",
+    name: "Tube Light",
     imgdata: "https://liquid-leds.com/cdn/shop/articles/how-to-pick-the-right-led-light-bulbs-for-your-bedroom-439429.jpg?v=1747548198&width=1600",
     rating: "⭐ ⭐ ⭐ ⭐",
     price: 200,

@@ -25,7 +25,7 @@ export const product = [
   },
   {
     id: 4,
-    name: "Grout Cleaning & Refill",
+    name: "Grout Cleaning",
     imgdata: "https://dqvd9g622ecnq.cloudfront.net/media/webp_image/Wilcon/pcp_images/tiles/986600000003.webp",
     rating: "⭐ ⭐ ⭐",
     price: 450,

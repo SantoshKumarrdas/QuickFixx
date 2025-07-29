@@ -17,7 +17,7 @@ export const product = [
   },
   {
     id: 3,
-    name: "Bathroom Fitting Installation",
+    name: "Bathroom Fitting",
     imgdata: "https://cdn.pixabay.com/photo/2015/10/22/22/59/plumbing-1002128_640.jpg",
     rating: "⭐ ⭐ ⭐ ⭐",
     price: 500,

@@ -25,7 +25,7 @@ export const product = [
   },
   {
     id: 4,
-    name: "Modular Wardrobe Installation",
+    name: "Modular Wardrobe",
     imgdata: "https://cdn.pixabay.com/photo/2023/12/20/13/30/wardrobe-8459898_640.jpg",
     rating: "⭐ ⭐ ⭐ ⭐ ⭐",
     price: 700,

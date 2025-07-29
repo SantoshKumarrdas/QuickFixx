@@ -17,7 +17,7 @@ export const product = [
   },
   {
     id: 3,
-    name: "House Shifting Assistance",
+    name: "House Shifting ",
     imgdata: "https://cdn.pixabay.com/photo/2017/09/11/14/56/background-check-2739233_640.jpg",
     rating: "⭐ ⭐ ⭐ ⭐",
     price: 500,

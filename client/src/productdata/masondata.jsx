@@ -9,7 +9,7 @@ export const product = [
   },
   {
     id: 2,
-    name: "Cement Plastering",
+    name: "Cement Plastering Construction",
     imgdata: "https://media.gettyimages.com/id/1422785127/photo/construction-workers-plastering-cement-on-the-construction-of-the-wall-on-the-construction.jpg?s=612x612&w=gi&k=20&c=4JCI3VrJeHcwYTPUAL8YPFUXxBjvAfurYeshuQ7iDfE=",
     rating: "⭐ ⭐ ⭐ ⭐",
     price: 900,
@@ -25,7 +25,7 @@ export const product = [
   },
   {
     id: 4,
-    name: "Boundary Wall Repair",
+    name: "Boundary Wall ",
     imgdata: "https://media.gettyimages.com/id/1295969219/photo/close-up-hand-of-bricklayer-worker-installing-bricks-on-construction-site.jpg?s=612x612&w=0&k=20&c=IqL4gEouZdwRJwZK6TjkneQTpKURwBOljvgqvGzCOto=",
     rating: "⭐ ⭐ ⭐",
     price: 750,

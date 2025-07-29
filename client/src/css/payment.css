@@ -658,6 +658,7 @@ background-color: #202b3b;
 }
 .product-card {
   width:auto; 
+  height: auto;
 }
  .button-group {
     flex-direction: column;
