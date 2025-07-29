@@ -21,8 +21,8 @@ router.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       mode: "payment",
       line_items,
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/cancel",
+      success_url: "https://quick-fixx.vercel.app/success",
+      cancel_url: "https://quick-fixx.vercel.app/cancel",
 
       // ✅ Add this to show shipping address fields
       shipping_address_collection: {
